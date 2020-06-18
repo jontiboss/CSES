@@ -8,8 +8,6 @@ public class NumberSpiral {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Reader reader = new Reader();
-		int nbr = reader.nextInt();
 		/*   The idea is to compute the the numbers noted with "(x)", coordinates where x=y, this value
 		 *   will always be the same independent on which way we traverse on the grid.
 		 *   to compute the value you can use following formula z = Max(x,y)^2 - (max(x,y)-1)
@@ -37,6 +35,9 @@ public class NumberSpiral {
 		 *    16  15  14 (13) 22
 		 *    17  18  19  20 (21)
 		 */
+		Reader reader = new Reader();
+		int nbr = reader.nextInt();
+		
 		for(int i =0;i<nbr;i++) {
 			long x = reader.nextLong();
 			long y = reader.nextLong();
